@@ -20,8 +20,15 @@ This project implements a decentralized federated learning (DFL) framework acros
 - `docs/`: Contains device compatibility explanation (PDF)
 
 ## Getting Started
-```bash
-git clone https://github.com/YOUR_USERNAME/DFL-Heterogeneous.git
-cd jetson_nodes
+git clone https://github.com/Achref008/StreamingAI-Prototype.git
+cd StreamingAI-Prototype
+
 pip install -r requirements.txt
-python main.py
+
+# Run a Jetson node
+cd jetson_nodes
+python JetsonMain.py
+
+# (On the Akida device)
+cd ../akida_node
+python akidamain.py
