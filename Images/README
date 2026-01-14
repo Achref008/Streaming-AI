@@ -1,0 +1,43 @@
+
+Experimental Results
+1. Loss under Disconnections (5 Nodes)
+
+![Loss](5nodes loss average under Disconnections.PNG) This figure shows the average training loss across 5 decentralized nodes under intermittent connectivity. Vertical dashed lines indicate node disconnection (orange) and reconnection (green) events. Parameters:
+
+Momentum buffer β = 0.9
+
+Learning rate schedule: Cosine annealing
+
+Gradient clipping = 5
+
+Local training steps TAU1 = 20 batches per round
+
+It demonstrates that momentum buffering stabilizes convergence despite network volatility.
+
+2. CIFAR-10 Validation Accuracy vs Momentum β
+
+This figure compares validation accuracy on unseen CIFAR-10 data for different momentum coefficients β. Common parameters:
+
+Dataset: CIFAR-10
+
+Decentralized gossip-based learning
+
+Same learning rate, batch size, and topology
+
+Lower β converges faster initially but shows higher variance, while higher β (0.9) provides smoother and more stable convergence.
+
+3. CIFAR10–MNIST Training Loss (Non-IID)
+
+Training loss evolution under heterogeneous non-IID data distribution. Parameters:
+
+Learning rate = 3e-4
+
+Batch size = 128
+
+Dirichlet non-IID factor α = 0.1
+
+TAU1 = 50 local batches per round
+
+Optimizer = Adam
+
+Higher momentum improves stability and reduces oscillations in heterogeneous cross-dataset learning.
