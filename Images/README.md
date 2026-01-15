@@ -38,6 +38,7 @@ Lower β converges faster initially but shows higher variance, while higher β (
 ## 3. CIFAR10–MNIST Training Loss (Non-IID)
 
 ![Loss NonIID](https://github.com/Achref008/StreamingAI-Prototype/blob/main/Images/loss.PNG) 
+
 Training loss evolution under heterogeneous non-IID data distribution across CNN and neuromorphic nodes.
 
 **Parameters:**
