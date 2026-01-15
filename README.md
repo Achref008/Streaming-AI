@@ -1,4 +1,4 @@
-# StreamingAI-Prototype — Decentralized Federated Learning for Heterogeneous Edge Devices (Jetson ↔ Akida)
+# EdgeSync — Decentralized Federated Learning for Heterogeneous Edge Devices 
 
 This repository implements a **Decentralized Federated Learning (DFL)** prototype for **collaborative image classification** on heterogeneous edge hardware:
 
