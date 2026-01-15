@@ -1,4 +1,4 @@
-# Robust Decentralized Federated Learning (DFL) for Heterogeneous Edge Devices
+# Robust Decentralized Federated Learning (DFL) system for Heterogeneous Edge Devices
 
 This project implements a decentralized federated learning (DFL) framework across heterogeneous AI nodes, specifically NVIDIA Jetson (CNN-based) and BrainChip Akida (neuromorphic SNN/CNN). It uses Metropolis-Hastings-style consensus, adaptive momentum updates, and cross-architecture weight projection.
 
