@@ -60,4 +60,19 @@ Higher momentum significantly improves stability and reduces oscillations in cro
 
 This screenshot shows real-time execution logs from all decentralized peers, including Jetson CNN nodes and a BrainChip Akida neuromorphic node, during collaborative training. Each terminal represents one device performing peer discovery, weight/logit exchange, gossip aggregation, and cross-architecture parameter adaptation.
 
+**What happens in real time**
+- Peer discovery and connection setup
+- Weight/logit exchange between neighbors
+- Gossip-based aggregation rounds
+- Temporary connection failures and automatic recovery
+- Cross-architecture weight adaptation between CNN ↔ SNN models
+
+**Key behaviors visible in the logs**
+- Received weights / Sent logits: decentralized peer-to-peer communication (no server)
+- Distillation with peers:  knowledge transfer between heterogeneous models
+- Shape mismatch ... resizing:  automatic parameter projection when converting CNN weights to Akida-compatible formats
+- Connection refused: simulated network instability
+- Waiting for at least k weights: robust aggregation despite missing peers
+- Saved plot / metrics_log: per-node monitoring and reproducibility
+
 The logs highlight automatic weight conversion (CNN ↔ SNN), robustness to temporary connection failures, and continued learning despite missing peers. This confirms stable, fully decentralized training across heterogeneous edge hardware without any central coordinator.
