@@ -56,7 +56,7 @@ Higher momentum significantly improves stability and reduces oscillations in cro
 
 ## 4. Live Heterogeneous Communication & Cross-Architecture Adaptation
 
-![Live Heterogeneous Communication]([https://github.com/Achref008/StreamingAI-Prototype/blob/main/Images/loss.PNG](https://github.com/Achref008/Edgesync-Decentralized-federated-learning-for-Heterogeneous-Edge-Devices/blob/main/Images/SuccessfulConverterHetergenousCommVar.PNG)) 
+![Live Heterogeneous](https://github.com/Achref008/Edgesync-Decentralized-federated-learning-for-Heterogeneous-Edge-Devices/blob/main/Images/SuccessfulConverterHetergenousCommVar.PNG)
 
 This screenshot shows real-time execution logs from all decentralized peers, including Jetson CNN nodes and a BrainChip Akida neuromorphic node, during collaborative training. Each terminal represents one device performing peer discovery, weight/logit exchange, gossip aggregation, and cross-architecture parameter adaptation.
 
