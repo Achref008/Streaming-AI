@@ -51,3 +51,13 @@ The raining loss evolution under heterogeneous non-IID data distribution across 
 - Optimizer: Adam
 
 Higher momentum significantly improves stability and reduces oscillations in cross-architecture decentralized learning.
+
+---
+
+## 4. Live Heterogeneous Communication & Cross-Architecture Adaptation
+
+![Loss NonIID](https://github.com/Achref008/StreamingAI-Prototype/blob/main/Images/loss.PNG) 
+
+This screenshot shows real-time execution logs from all decentralized peers, including Jetson CNN nodes and a BrainChip Akida neuromorphic node, during collaborative training. Each terminal represents one device performing peer discovery, weight/logit exchange, gossip aggregation, and cross-architecture parameter adaptation.
+
+The logs highlight automatic weight conversion (CNN ↔ SNN), robustness to temporary connection failures, and continued learning despite missing peers. This confirms stable, fully decentralized training across heterogeneous edge hardware without any central coordinator.
