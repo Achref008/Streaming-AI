@@ -68,11 +68,11 @@ This screenshot shows real-time execution logs from all decentralized peers, inc
 - Cross-architecture weight adaptation between CNN ↔ SNN models
 
 **Key behaviors visible in the logs**
-- Received weights / Sent logits: decentralized peer-to-peer communication (no server)
-- Distillation with peers:  knowledge transfer between heterogeneous models
-- Shape mismatch ... resizing:  automatic parameter projection when converting CNN weights to Akida-compatible formats
-- Connection refused: simulated network instability
-- Waiting for at least k weights: robust aggregation despite missing peers
-- Saved plot / metrics_log: per-node monitoring and reproducibility
+- Received weights / Sent logits : Decentralized peer-to-peer communication (no server)
+- Distillation with peers        : Knowledge transfer between heterogeneous models
+- Shape mismatch ... resizing    : Automatic parameter projection when converting CNN weights to Akida-compatible formats
+- Connection refused             : Simulated network instability
+- Waiting for at least k weights : Robust aggregation despite missing peers
+- Saved plot / metrics_log       : Per-node monitoring and reproducibility
 
 The logs highlight automatic weight conversion (CNN ↔ SNN), robustness to temporary connection failures, and continued learning despite missing peers. This confirms stable, fully decentralized training across heterogeneous edge hardware without any central coordinator.
